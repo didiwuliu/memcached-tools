@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>memcached-tools</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+		<link rel="stylesheet" href="./css/index.css">
+
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/response.min.js"></script>
+		<![endif]-->
+
+		<!--
+		*************************************************************************************
+
+		    ******************        ***       
+		    ******************        ***       
+		    ***    ****    *** *****************
+		    ***    ****    *** *****************
+		    ******************       ***
+		    ******************    *** ***
+		    ***    ****    ***  ***************
+		    ***    ****    ***  ***************
+		    ******************        ***
+		    ****************** *****************
+		    ***    ****   **** *****************
+		    ***    **** * ***         ***
+		   ***    ****  ****          ***
+		  ***    ****   ***           ***
+
+		*************************************************************************************
+		-->
+	</head>
+	<body>
+		<div>
+			<label for="host">服务器ip</label>
+			<select id="host">
+				<option value="10.0.11.224">10.0.11.224</option>
+			</select>
+			<br />
+			<label for="port">端口</label>
+			<select id="port">
+				<option value="11211">11211</option>
+			</select>
+
+			<br />
+			<label for="key">key</label>
+			<input type="text" id="key" value="APP_HOME_PAGE_AD_CONFIG_bj_ios"></input>
+
+			<label for="value">写入内容</label>
+			<textarea id="value" cols="100" rows="10">{"id":7104,"pop_for":["1","2","3"]}</textarea>
+
+			<br />
+			<input type="button" id="read" value="读取"></input>
+			<input type="button" id="write" value="写入"></input>
+			<input type="button" id="delete" value="删除"></input>
+			<input type="button" id="flush" value="flush"></input>
+
+			<br />
+			<div id="content"></div>
+
+			<br />
+			<div>key list</div>
+			<div>APP_HOME_PAGE_AD_CONFIG_bj_ios</div>
+			<div>APP_HOME_PAGE_AD_CONFIG_bj_android</div>
+			<div>APP_HOME_PAGE_AD_CONFIG__ios</div>
+			<div>APP_HOME_PAGE_AD_CONFIG__android</div>
+		</div>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./js/index.js"></script>
+	</body>
+</html>

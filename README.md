@@ -1,4 +1,0 @@
-memcached-tools
-===============
-
-memcached-tools
