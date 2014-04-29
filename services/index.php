@@ -16,7 +16,12 @@ if($method == "read") {
 	$result -> data = $mc -> get($key);
 } else if($method == "write") {
 	$value = json_decode($value);
-	$mc -> set($key, $value);
+	$val = array(
+        'times' => $value -> times,
+        'first_time' => $value -> first_time,
+        'last_time' => $value -> last_time
+    );
+	$mc -> set($key, $value, 7200);
 } else if($method == "delete") {
 	$mc -> delete($key);
 } else if($method == "flush") {
