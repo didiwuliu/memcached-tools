@@ -21,7 +21,7 @@ if($method == "read") {
         'first_time' => $value -> first_time,
         'last_time' => $value -> last_time
     );
-	$mc -> set($key, $value, 7200);
+	$mc -> set($key, $val, 7200);
 } else if($method == "delete") {
 	$mc -> delete($key);
 } else if($method == "flush") {
