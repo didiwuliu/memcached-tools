@@ -12,6 +12,20 @@ $(document).ready(function() {
 
 		request(url, data);
 	});
+	
+	$("#changeExpireTime").bind("click", function() {
+		var key = $("#key").val();
+		var expireTime = $("#expireTime").val();
+
+		var url = base_url;
+		var data = {
+			method: "changeExpireTime",
+			key: key,
+			expireTime: expireTime
+		};
+
+		request(url, data);
+	});
 
 	$("#write").bind("click", function() {
 		var key = $("#key").val();

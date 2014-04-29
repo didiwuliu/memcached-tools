@@ -6,6 +6,7 @@ $port = isset($_POST["port"]) ? $_POST["port"] : "11211";
 $method = isset($_POST["method"]) ? $_POST["method"] : "read";
 $key = isset($_POST["key"]) ? $_POST["key"] : "foo";
 $value = isset($_POST["value"]) ? urldecode($_POST["value"]) : "bar";
+$expireTime = isset($_POST["expireTime"]) ? $_POST["expireTime"] : 7200;
 $mc = new Memcached();
 $mc -> addServer($host, $port);
 
@@ -14,6 +15,9 @@ $result -> code = 200;
 
 if($method == "read") {
 	$result -> data = $mc -> get($key);
+} else if($method == "changeExpireTime") {
+    $val = $mc -> get($key);
+	$mc -> set($key, $val, $expireTime);
 } else if($method == "write") {
 	$value = json_decode($value);
 	$val = array(
