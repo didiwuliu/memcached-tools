@@ -19,13 +19,18 @@ if($method == "read") {
     $val = $mc -> get($key);
 	$mc -> set($key, $val, $expireTime);
 } else if($method == "write") {
-	$value = json_decode($value);
-	$val = array(
-        'times' => $value -> times,
-        'first_time' => $value -> first_time,
-        'last_time' => $value -> last_time
-    );
-	$mc -> set($key, $val, 7200);
+    if($key.indexOf("YC_Limit_YC_Limit") == 0) {
+        $value = json_decode($value);
+        $val = array(
+            'times' => $value -> times,
+            'first_time' => $value -> first_time,
+            'last_time' => $value -> last_time
+        );
+        $mc -> set($key, $val, 7200);
+    } else {
+        $mc -> set($key, $value);
+    }
+
 } else if($method == "delete") {
 	$mc -> delete($key);
 } else if($method == "flush") {
