@@ -64,6 +64,10 @@ $(document).ready(function() {
 });
 
 function request(url, data) {
+    var host = $("#host").val();
+    var port = $("#port").val();
+    data.host = host;
+    data.port = port;
 	$.ajax({
 		type: "POST",
 		url: url,
