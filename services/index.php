@@ -19,7 +19,7 @@ if($method == "read") {
     $val = $mc -> get($key);
 	$mc -> set($key, $val, $expireTime);
 } else if($method == "write") {
-    if($key.indexOf("YC_Limit_YC_Limit") === 0) {
+    if(stripos($key, "YC_Limit_YC_Limit") === 0) {
         $value = json_decode($value);
         $val = array(
             'times' => $value -> times,
