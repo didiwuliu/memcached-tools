@@ -1,6 +1,9 @@
 [memcached-tools_1.0.0.1 2014-05-16 张春生]
 1.新功能：增加WEIDAO_COVER_URL的查询，调整保存数据方法
 
+[memcached-tools_1.0.0.1 2014-06-10 张春生]
+1.新功能：修复自定义Key不能写入bug
+
 --备注分类
 1、新功能：
 2、Bug:
