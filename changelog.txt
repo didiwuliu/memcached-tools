@@ -4,6 +4,9 @@
 [memcached-tools_1.0.0.1 2014-06-10 张春生]
 1.新功能：修复自定义Key不能写入bug
 
+[memcached-tools_1.0.0.1 2014-06-19 张春生]
+1.新功能：增加memcached服务器
+
 --备注分类
 1、新功能：
 2、Bug:
