@@ -8,6 +8,9 @@
 1.新功能：增加memcached服务器
 2.新功能：增加COUPON_IMEI_359439051076740的查询
 
+[memcached-tools_1.0.0.1 2014-07-02 张春生]
+1.新功能：增加YC_OAuth2_clients的查询
+
 --备注分类
 1、新功能：
 2、Bug:
