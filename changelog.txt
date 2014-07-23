@@ -15,6 +15,9 @@
 1.新功能：增加User_Collect_Driver_Count的查询
 2.新功能：增加YC_Car_Type_Images的查询
 
+[memcached-tools_1.0.0.1 2014-07-23 张春生]
+1.新功能：增加YC_PRODUCT_VERSION_ALL的查询
+
 --备注分类
 1、新功能：
 2、Bug:
