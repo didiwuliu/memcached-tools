@@ -20,6 +20,9 @@
 2.新功能：增加ACTIVITY_PRICE_DURATION_10000001的查询
 3.新功能：增加YC_DEVICE_DRIVER_CAR_COUNT_11_bj的查询
 
+[memcached-tools_1.0.0.1 2014-08-06 张春生]
+1.新功能：增加YC_DEVICE_DRIVER_CAR_COUNT_11_bj的查询
+
 --备注分类
 1、新功能：
 2、Bug:
