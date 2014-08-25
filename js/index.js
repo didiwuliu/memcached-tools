@@ -1,4 +1,4 @@
-var base_url = "http://memcached.yongche.org/services/index.php";
+var base_url = "";
 
 $(document).ready(function() {
 	$("#read").bind("click", function() {
