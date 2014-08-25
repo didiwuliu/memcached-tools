@@ -10,7 +10,7 @@
  */
 error_reporting(E_ALL & ~E_NOTICE);
 
-$host = isset($_POST["host"]) ? $_POST["host"] : "10.0.11.224";
+$host = isset($_POST["host"]) ? $_POST["host"] : "";
 $port = isset($_POST["port"]) ? $_POST["port"] : "11211";
 $method = isset($_POST["method"]) ? $_POST["method"] : "read";
 $key = isset($_POST["key"]) ? $_POST["key"] : "foo";
@@ -28,7 +28,7 @@ if($method == "read") {
     $val = $mc->get($key);
 	$mc->set($key, $val, $expireTime);
 } else if($method == "write") {
-    if(stripos($key, "YC_Limit_YC_Limit") === 0) {
+    if(stripos($key, "") === 0) {
         $value = json_decode($value);
         $val = array(
             'times' => $value->times,
