@@ -28,6 +28,7 @@
 
 [memcached-tools_1.0.0.1 2014-08-25 张春生]
 1.新功能：增加YC_Limit_activity_vcode_{phoneNum}的查询
+2.新功能：增加YC_WEIXIN_ACTIVITY_CONFIG_{activity_id}的查询
 
 --备注分类
 1、新功能：
